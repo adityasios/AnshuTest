@@ -13,9 +13,14 @@
 		404C4CC72209533A0033E5CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404C4CC62209533A0033E5CB /* Assets.xcassets */; };
 		404C4CCA2209533A0033E5CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404C4CC82209533A0033E5CB /* LaunchScreen.storyboard */; };
 		404C4CCD2209533A0033E5CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C4CCC2209533A0033E5CB /* main.m */; };
+		404C4CD5220957060033E5CB /* TecherMod.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C4CD4220957060033E5CB /* TecherMod.m */; };
+		404C4CDA220957FD0033E5CB /* ClassMod.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C4CD9220957FD0033E5CB /* ClassMod.m */; };
+		404C4CDD2209611D0033E5CB /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 404C4CDC2209611D0033E5CB /* DejalActivityView.m */; };
+		8D5A32B5396C33E913200254 /* libPods-AnshuTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E2A92A8CEF1571A6915AAB /* libPods-AnshuTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28E2A92A8CEF1571A6915AAB /* libPods-AnshuTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnshuTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		404C4CBA220953380033E5CB /* AnshuTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnshuTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		404C4CBD220953380033E5CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		404C4CBE220953380033E5CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +31,14 @@
 		404C4CC92209533A0033E5CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		404C4CCB2209533A0033E5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		404C4CCC2209533A0033E5CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		404C4CD3220957060033E5CB /* TecherMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TecherMod.h; sourceTree = "<group>"; };
+		404C4CD4220957060033E5CB /* TecherMod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TecherMod.m; sourceTree = "<group>"; };
+		404C4CD8220957FD0033E5CB /* ClassMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassMod.h; sourceTree = "<group>"; };
+		404C4CD9220957FD0033E5CB /* ClassMod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassMod.m; sourceTree = "<group>"; };
+		404C4CDB2209611D0033E5CB /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
+		404C4CDC2209611D0033E5CB /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		A3AF6C3CDC3C1B5B1604D0D4 /* Pods-AnshuTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnshuTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnshuTest/Pods-AnshuTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C0BB9D902CF1D5918952B51E /* Pods-AnshuTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnshuTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnshuTest/Pods-AnshuTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5A32B5396C33E913200254 /* libPods-AnshuTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +58,8 @@
 			children = (
 				404C4CBC220953380033E5CB /* AnshuTest */,
 				404C4CBB220953380033E5CB /* Products */,
+				F4E26E1B63FCA0005218E702 /* Pods */,
+				81E9D5EE690AD3973C99CC23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +74,11 @@
 		404C4CBC220953380033E5CB /* AnshuTest */ = {
 			isa = PBXGroup;
 			children = (
+				404C4CDE220961200033E5CB /* 3rdParty */,
 				404C4CBD220953380033E5CB /* AppDelegate.h */,
 				404C4CBE220953380033E5CB /* AppDelegate.m */,
-				404C4CC0220953380033E5CB /* ViewController.h */,
-				404C4CC1220953380033E5CB /* ViewController.m */,
+				404C4CD6220957CC0033E5CB /* Model */,
+				404C4CD7220957D50033E5CB /* Controller */,
 				404C4CC3220953380033E5CB /* Main.storyboard */,
 				404C4CC62209533A0033E5CB /* Assets.xcassets */,
 				404C4CC82209533A0033E5CB /* LaunchScreen.storyboard */,
@@ -71,6 +88,52 @@
 			path = AnshuTest;
 			sourceTree = "<group>";
 		};
+		404C4CD6220957CC0033E5CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				404C4CD3220957060033E5CB /* TecherMod.h */,
+				404C4CD4220957060033E5CB /* TecherMod.m */,
+				404C4CD8220957FD0033E5CB /* ClassMod.h */,
+				404C4CD9220957FD0033E5CB /* ClassMod.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		404C4CD7220957D50033E5CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				404C4CC0220953380033E5CB /* ViewController.h */,
+				404C4CC1220953380033E5CB /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		404C4CDE220961200033E5CB /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				404C4CDB2209611D0033E5CB /* DejalActivityView.h */,
+				404C4CDC2209611D0033E5CB /* DejalActivityView.m */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		81E9D5EE690AD3973C99CC23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28E2A92A8CEF1571A6915AAB /* libPods-AnshuTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4E26E1B63FCA0005218E702 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3AF6C3CDC3C1B5B1604D0D4 /* Pods-AnshuTest.debug.xcconfig */,
+				C0BB9D902CF1D5918952B51E /* Pods-AnshuTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +141,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 404C4CD02209533A0033E5CB /* Build configuration list for PBXNativeTarget "AnshuTest" */;
 			buildPhases = (
+				7E6218C23C5B7DF3FE7FDE5A /* [CP] Check Pods Manifest.lock */,
 				404C4CB6220953380033E5CB /* Sources */,
 				404C4CB7220953380033E5CB /* Frameworks */,
 				404C4CB8220953380033E5CB /* Resources */,
@@ -136,13 +200,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E6218C23C5B7DF3FE7FDE5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnshuTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		404C4CB6220953380033E5CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404C4CDD2209611D0033E5CB /* DejalActivityView.m in Sources */,
 				404C4CC2220953380033E5CB /* ViewController.m in Sources */,
+				404C4CD5220957060033E5CB /* TecherMod.m in Sources */,
 				404C4CCD2209533A0033E5CB /* main.m in Sources */,
+				404C4CDA220957FD0033E5CB /* ClassMod.m in Sources */,
 				404C4CBF220953380033E5CB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,16 +375,18 @@
 		};
 		404C4CD12209533A0033E5CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3AF6C3CDC3C1B5B1604D0D4 /* Pods-AnshuTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RPK4XC758S;
 				INFOPLIST_FILE = AnshuTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sl.geo.AnshuTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wm.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,16 +394,18 @@
 		};
 		404C4CD22209533A0033E5CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BB9D902CF1D5918952B51E /* Pods-AnshuTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RPK4XC758S;
 				INFOPLIST_FILE = AnshuTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sl.geo.AnshuTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wm.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
